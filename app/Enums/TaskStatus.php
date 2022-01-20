@@ -11,9 +11,10 @@ use BenSampo\Enum\Enum;
  */
 final class TaskStatus extends Enum
 {
-    const Pending =   0;
-    const Ongoing =   1;
-    const Done = 2;
+    const Pending =   1;
+    const Ongoing =   2;
+    const Done = 3;
+
     public static function getDescription($value): string
     {
         if ($value === self::Ongoing) {
